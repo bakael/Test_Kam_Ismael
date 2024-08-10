@@ -14,7 +14,7 @@ Assignment.belongsTo(Conversation, { foreignKey: 'conversation_id' });
 Assignment.belongsTo(Agent, { foreignKey: 'agent_id' });
 Closure.belongsTo(Conversation, { foreignKey: 'conversation_id' });
 
-// Synchronisation avec la base de données
+// Sync avec la base de données
 sequelize.sync({ alter: true })
   .then(() => console.log('Base de données synchronisée'))
   .catch(error => console.log('Erreur de synchronisation:', error));
