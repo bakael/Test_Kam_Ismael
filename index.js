@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 // Routes
 app.use('/agents', agentRoutes);
 app.use('/conversations', conversationRoutes);
+app.use('/messages', messageRoutes);
 
 // Routes de base
 app.get('/', (req, res) => {
