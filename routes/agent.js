@@ -184,7 +184,7 @@ router.get('/status/:id', verifyToken, (req, res) => {
       return res.status(500).json({ error: 'Erreur lors de la récupération du statut.' });
     }
 
-    if (!status) {    console.log('bla');
+    if (!status) {   
 
       return res.status(404).json({ error: `Statut de l'agent ${agentId} introuvable.` });
     

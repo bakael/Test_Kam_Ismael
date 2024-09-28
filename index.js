@@ -6,7 +6,7 @@ const http = require('http');
 const { sequelize } = require('./models');
 const agentRoutes = require('./routes/agent');
 const conversationRoutes = require('./routes/conversation');
-
+const messageRoutes= require('./routes/message')
 const { wss } = require('./websocket');
 
 const app = express();
